@@ -1,4 +1,4 @@
-##
+#
 # Crystal Egbert
 # 1/25/2025
 # Sales Prediction Programming Project
@@ -13,4 +13,3 @@ Profit= Total_sales*0.23
 
 # Display the profit
 print('The Profit is $',format(Profit,',.2f'))
-
