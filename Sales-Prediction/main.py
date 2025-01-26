@@ -1,14 +1,16 @@
-#
-# Name
-# Date
+##
+# Crystal Egbert
+# 1/25/2025
 # Sales Prediction Programming Project
 # COSC 1010
 #
 
-# Variables to hold the sales total and the profit
+# Get the projected total sales.
+Total_sales=float(input('Enter the projected sales'))
 
-# Get the amount of projected sales.
+# Calculate the profit as 23 percent of the total sales.
+Profit= Total_sales*0.23
 
-# Calculate the projected profit.
+# Display the profit
+print('The Profit is $',format(Profit,',.2f'))
 
-# Print the projected profit.
