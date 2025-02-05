@@ -2,7 +2,7 @@
 # Name
 # Date
 # Sales Tax Programming Project
-# COSC 1010
+# COSC 2409 DNT
 #
 
 # Variable declarations
