@@ -6,7 +6,7 @@
 #
 
 # Get the projected total sales.
-Total_sales=float(input('Enter the projected sales'))
+Total_sales=float(input('Enter the projected sales:\n'))
 
 # Calculate the profit as 23 percent of the total sales.
 Profit= Total_sales*0.23
