@@ -25,7 +25,7 @@ try:
             break
 
 # display randomly selected response from the list
-    print(random.choice(responses).strip())
+        print(random.choice(responses).strip())  # strip to clean it up
 
 #check for errors
 except FileNotFoundError:
