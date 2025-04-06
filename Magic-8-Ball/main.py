@@ -12,7 +12,7 @@ responses =[]
 
  # begin try except
 try:                 
-    with open('8_ball_responses.txt','r') as file:
+    with open('/workspaces/COSC1010/Magic-8-Ball/8_ball_responses.txt','r') as file:
       responses = file.readlines()  #read lines and create a file to a list
 
 # prompt user for a question
