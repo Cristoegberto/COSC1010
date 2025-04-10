@@ -12,12 +12,12 @@ responses =[]
 
  # begin try except
 try:                 
-    with open('/workspaces/COSC1010/Magic-8-Ball/8_ball_responses.txt','r') as file:
+    with open('8_ball_responses.txt','r') as file:
       responses = file.readlines()  #read lines and create a file to a list
 
 # prompt user for a question
     while True:
-        question = input('Ask my Mystical, Magical 8 Ball youre undying questions: \nType "Done" if you\'ve satified your queries.')
+        question = input('Ask my Mystical, Magical 8 Ball youre undying questions: \nType "Done" if you\'ve satified your queries. ')
 
 # quit or break loop
         if question == 'Done':
