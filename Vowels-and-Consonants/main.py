@@ -1,7 +1,6 @@
 #
-# Name
-# Date
+# Crystal Egbert
+# 4/12/25
 # Vowels and Consonants Programming Project
 # COSC 1010
 #
-# Use comments liberally throughout the program. 
