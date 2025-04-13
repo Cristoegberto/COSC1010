@@ -9,19 +9,19 @@
 def new_sentence():
 
     sentence = input('Please enter your sentence to be translated to Piglatin: ')
-  # split the senence into a list
+    # split the senence into a list
     words = sentence.split()
     # make list and put the new words and sentences in
     pig_list = []
   
-# split the input into words
+    # split the input into words
     for word in words:                  # for each word in the sentence
         piglatin_word = user_input(word)  #convert the word to piglatin
         pig_list.append(piglatin_word)    # put piglatin word in pig list
    
         
     final_sentence = ' '                #start final sentence w spaces
-    for word in pig_list:              # join
+    for word in pig_list:              # join words in piglist as sentence
         final_sentence += word + ' '    # concatenate the words w spaces
 
     print (final_sentence)
