@@ -1,16 +1,48 @@
 #
-# Name
-# Date
+# Crystal Egbert
+# 4/17/25
 # Capital Quiz Programming Project
 # COSC 1010
 #
-# Use comments liberally throughout the program. 
 
-import random
+import random 
+NUM_STATES = 5
 
 def main():
+    state_caps = state_cap_dictionary()
+
+    # initial variables to keep count of the number
+    # of corect and incorrect answers
+    correct = 0
+    incorrect = 0
+
+    # quiz the user
+    for count in range(NUM_STATES):
+
+        #get a random entry from the dictionary get all the keys
+        state = random.choice(list(state_caps.keys()))
+        # get the individual capital for the state
+        capital = state_caps[state] 
+        #Quiz the user
+        print ('What is the capital of', state,'? ', end='')
+        response = input()
+
+        # Is the user correct?
+        if response.lower() == capital.lower():
+            correct += 1
+            print ('Correct!')
+        else:
+            incorrect += 1
+            print ('Incorrect.')
+
+    # Display results
+    print('Correct reponses:', correct)
+    print('Incorrect responses:', incorrect)
+
+
+def state_cap_dictionary():
     # Initialize dictionary
-    capitals = {'Alabama':'Montgomery', 'Alaska':'Juneau',
+    sc = {'Alabama':'Montgomery', 'Alaska':'Juneau',
                 'Arizona':'Phoenix', 'Arkansas':'Little Rock',
                 'California':'Sacramento', 'Colorado':'Denver',
                 'Connecticut':'Hartford', 'Delaware':'Dover',
@@ -35,10 +67,7 @@ def main():
                 'Vermont':'Montpelier', 'Virginia':'Richmond',
                 'Washington':'Olympia', 'West Virginia':'Charleston',
                 'Wisconsin':'Madison', 'Wyoming':'Cheyenne'}
-
-    # Local variables
-
-    # Continue until user quits the game.
+    return sc
 
 # Call the main function.
 main()
