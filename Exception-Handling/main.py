@@ -4,7 +4,6 @@
 # Average of Numbers Programming Project
 # COSC 1010
 
-
 # Def main
 def average_number(holder):
 
